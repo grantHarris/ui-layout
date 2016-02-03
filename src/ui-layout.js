@@ -963,7 +963,7 @@ angular.module('ui.layout', [])
         };
       }])
 
-  .directive('uiLayoutLoaded', ['$timeout, Layout', function($timeout, Layout) {
+  .directive('uiLayoutLoaded', ['$timeout', 'Layout', function($timeout, Layout) {
     // Currently necessary for programmatic toggling to work with "initially" collapsed containers,
     // because prog. toggling depends on the logic of prevButton and nextButton (which should be probably refactored out)
     //
